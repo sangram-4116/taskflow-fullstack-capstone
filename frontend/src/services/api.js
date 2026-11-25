@@ -2,8 +2,8 @@ import axios from 'axios';
 
 const API_BASE_URL =
   window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-    ? 'http://127.0.0'
-    : 'https://onrender.com';
+   ? 'http://127.0.0.1:8000/api'
+    :'https://taskflow-fullstack-capstone.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
